@@ -1,0 +1,29 @@
+/******************************************************************************
+Exercicio Aula dia 08/03/2023
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    char tipos [][32] = {"Int", "Char", "Float"};
+    printf("Tamanho em bytes dos tipos de variaveis a baixo:\n");
+    printf("%s, ", tipos[0]);
+    printf("%s, e ", tipos[1]);
+    printf("%s. \n", tipos[2]);
+    
+    int a = 2023;
+    char b = 'J';
+    float c = 0.75;
+    
+    printf("Tamanho(int) = %ld bytes \n",sizeof(int));
+    printf("Tamanho(char) = %ld bytes \n",sizeof(char));
+    printf("Tamanho(float) = %ld bytes \n",sizeof(float));
+    
+    printf("Endereço de onde estão alocados na memoria temporaria:\n");
+    printf("Endereço da variavel 'int a' na memoria: %p, Conteudo armazenado na memoria: %i \n", &a, a);
+    printf("Endereço da variavel 'char b' na memoria: %p, Conteudo armazenado na memoria: %c \n", &b, b);
+    printf("Endereço da variavel 'float c' na memoria: %p, Conteudo armazenado na memoria: %f \n", &c, c);
+    
+}
